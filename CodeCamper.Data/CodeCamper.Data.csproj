@@ -45,7 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeCamperDbContext.cs" />
+    <Compile Include="Configurations\AttendanceConfiguration.cs" />
+    <Compile Include="Configurations\SessionConfiguration.cs" />
+    <Compile Include="Helpers\IRepositoryProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\PredicateBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\RepositoryFactories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\RepositoryProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleData\CodeCamperDatabaseInitializer.cs" />
+    <Compile Include="SampleData\PeopleNames.cs" />
+    <Compile Include="SampleData\RandomSelector.cs" />
+    <Compile Include="SampleData\SampleTextGenerator.cs" />
+    <Compile Include="SampleData\SampleTrack.cs" />
+    <Compile Include="SampleData\TagsGenerator.cs" />
+    <Compile Include="SampleData\TheChosen.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeCamper.Model\CodeCamper.Model.csproj">
@@ -54,7 +76,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
