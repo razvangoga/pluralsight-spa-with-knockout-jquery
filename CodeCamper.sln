@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamper.Data", "CodeCamp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamper.Model", "CodeCamper.Model\CodeCamper.Model.csproj", "{246C7BEA-2D70-4AE9-AEA4-6036DB187DD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamper.Data.Contracts", "CodeCamper.Data.Contracts\CodeCamper.Data.Contracts.csproj", "{B115C15E-AF99-4849-89BC-3F4938218E58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoremIpsumGenerator", "LoremIpsumGenerator", "{8B577675-DBD8-458D-A02D-8F58AAF5F95E}"
+	ProjectSection(SolutionItems) = preProject
+		LoremIpsumGenerator\NLipsum.Core.dll = LoremIpsumGenerator\NLipsum.Core.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +32,10 @@ Global
 		{246C7BEA-2D70-4AE9-AEA4-6036DB187DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246C7BEA-2D70-4AE9-AEA4-6036DB187DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{246C7BEA-2D70-4AE9-AEA4-6036DB187DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B115C15E-AF99-4849-89BC-3F4938218E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B115C15E-AF99-4849-89BC-3F4938218E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B115C15E-AF99-4849-89BC-3F4938218E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B115C15E-AF99-4849-89BC-3F4938218E58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
