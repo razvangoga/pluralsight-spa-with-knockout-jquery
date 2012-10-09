@@ -132,6 +132,7 @@
     <Compile Include="App_Start\NinjectDependencyResolver.cs" />
     <Compile Include="App_Start\NinjectDependencyScope.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\ValidationActionFilter.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ApiBaseController.cs" />
     <Compile Include="Controllers\AttendanceController.cs" />
@@ -347,6 +348,8 @@
     <Content Include="Test\web api\webapi.get-result.tests.js" />
     <Content Include="Test\web api\webapi.person-cud.tests.html" />
     <Content Include="Test\web api\webapi.person-cud.tests.js" />
+    <Content Include="Test\web api\webapi.session-cud-validation.tests.html" />
+    <Content Include="Test\web api\webapi.session-cud-validation.tests.js" />
     <Content Include="Test\web api\webapi.session-cud.tests.html" />
     <Content Include="Test\web api\webapi.session-cud.tests.js" />
     <Content Include="Test\web api\webapi.testsuite.html" />

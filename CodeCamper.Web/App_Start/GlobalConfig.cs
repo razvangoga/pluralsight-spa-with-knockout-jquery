@@ -1,5 +1,7 @@
 using System.Web.Http;
 using Newtonsoft.Json.Serialization;
+using System.Net.Http.Formatting;
+using CodeCamper.Web.App_Start;
 
 namespace CodeCamper.Web
 {
@@ -15,9 +17,10 @@ namespace CodeCamper.Web
             // Configure json camelCasing per the following post: http://jpapa.me/NqC2HH
             // Here we configure it to write JSON property names with camel casing
             // without changing our server-side data model:
-            var json = config.Formatters.JsonFormatter;
-            json.SerializerSettings.ContractResolver =
-                new CamelCasePropertyNamesContractResolver();
+            JsonMediaTypeFormatter json = config.Formatters.JsonFormatter;
+            json.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+            config.Filters.Add(new ValidationActionFilter());
         }
     }
 }
