@@ -327,6 +327,7 @@
     <Content Include="Scripts\lib\sammy.min.js" />
     <Content Include="Scripts\lib\sammy.title.js" />
     <Content Include="Scripts\lib\sammy.title.min.js" />
+    <Content Include="shivs.txt" />
     <Content Include="Test\dataservice.test.html" />
     <Content Include="Test\dataservice.test.js" />
     <Content Include="Test\main.tests.js" />
@@ -383,6 +384,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".htaccess" />
     <None Include="Content\styles.less" />
     <Content Include="index.cshtml" />
     <Content Include="Test\vm.speaker.tests.cshtml" />
