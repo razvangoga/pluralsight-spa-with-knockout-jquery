@@ -65,8 +65,12 @@
     -->
 
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="scripts/lib/jquery-1.8.2.min.js"><\/script>')</script>
+    <!-- by direct html
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="scripts/lib/jquery-1.8.2.min.js"><\/script>')</script>
+    -->
+    <!-- or by a mvc4 bundle -->
+    @Scripts.Render("~/bundles/jquery")
 
     <!-- Now we grab the 3rd party libraries, some of which depend on jquery. 
         Others we need before we depend on them later -->

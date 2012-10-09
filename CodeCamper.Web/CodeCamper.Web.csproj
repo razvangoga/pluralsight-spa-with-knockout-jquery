@@ -232,7 +232,6 @@
     <Content Include="Content\images\trash.png" />
     <Content Include="Content\images\valid.png" />
     <Content Include="Content\images\val_asterisk.png" />
-    <Content Include="Content\qunit.css" />
     <Content Include="Content\toastr-responsive.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="favicon.ico" />

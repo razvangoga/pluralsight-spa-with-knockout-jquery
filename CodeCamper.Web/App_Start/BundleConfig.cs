@@ -17,6 +17,8 @@ namespace CodeCamper.Web
             bundles.IgnoreList.Ignore("*-vsdoc.js");
             bundles.IgnoreList.Ignore("*intellisense.js");
 
+            bundles.UseCdn = true;
+
             // All application JS files (except mocks")
             bundles.Add(new ScriptBundle("~/bundles/jsapplibs")
                 // Include all files in the named directory that match "*.js";
@@ -37,13 +39,14 @@ namespace CodeCamper.Web
             bundles.Add(new ScriptBundle("~/bundles/modernizr")
                 .Include("~/Scripts/lib/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquery",
+                "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+                .Include("~/Scripts/lib/jquery-1.8.2.js"));
+
             // 3rd Party JavaScript files
             bundles.Add(new ScriptBundle("~/bundles/jsextlibs")
                 .Include(
                     "~/Scripts/lib/json2.min.js", // IE7 needs this
-
-                    // jQuery and its plugins
-                    //"~/Scripts/lib/jquery-1.7.2.min.js", // use CDN instead
 
                     // jQuery plugins
                     "~/Scripts/lib/activity-indicator.js",
