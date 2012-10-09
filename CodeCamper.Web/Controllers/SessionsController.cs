@@ -16,10 +16,6 @@ namespace CodeCamper.Web.Controllers
             Uow = uow;
         }
 
-       #region OData Future: IQueryable<T>
-       //[Queryable]
-       // public IQueryable<Session> Get()
-       #endregion
 
         // GET /api/sessions
         public IEnumerable<Session> Get()
@@ -58,6 +54,14 @@ namespace CodeCamper.Web.Controllers
         public HttpResponseMessage Put(Session session)
         {
             Uow.Sessions.Update(session);
+            Uow.Commit();
+            return new HttpResponseMessage(HttpStatusCode.NoContent);
+        }
+
+        // DELETE /api/sessions/5
+        public HttpResponseMessage Delete(int id)
+        {
+            Uow.Sessions.Delete(id);
             Uow.Commit();
             return new HttpResponseMessage(HttpStatusCode.NoContent);
         }

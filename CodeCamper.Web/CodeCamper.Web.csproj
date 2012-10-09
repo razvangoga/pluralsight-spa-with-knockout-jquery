@@ -284,6 +284,12 @@
     <Content Include="Scripts\app\vm.shell.js" />
     <Content Include="Scripts\app\vm.speaker.js" />
     <Content Include="Scripts\app\vm.speakers.js" />
+    <Content Include="Scripts\lib\activity-indicator.js" />
+    <Content Include="Scripts\lib\amplify.core.js" />
+    <Content Include="Scripts\lib\amplify.request.js" />
+    <Content Include="Scripts\lib\amplify.store.js" />
+    <Content Include="Scripts\lib\jquery.mockjson.js" />
+    <Content Include="Scripts\lib\knockout.validation.js" />
     <Content Include="Scripts\lib\koExternalTemplateEngine-amd.js" />
     <Content Include="Scripts\lib\koExternalTemplateEngine-amd.min.js" />
     <Content Include="Scripts\lib\koExternalTemplateEngine.js" />
@@ -292,9 +298,6 @@
     <Content Include="Scripts\lib\koExternalTemplateEngine_all.min.js" />
     <Content Include="Scripts\lib\json2.js" />
     <Content Include="Scripts\lib\json2.min.js" />
-    <Content Include="Scripts\lib\infuser-amd.js" />
-    <Content Include="Scripts\lib\infuser-amd.min.gz.js" />
-    <Content Include="Scripts\lib\infuser-amd.min.js" />
     <Content Include="Scripts\lib\infuser.js" />
     <Content Include="Scripts\lib\infuser.min.gz.js" />
     <Content Include="Scripts\lib\infuser.min.js" />
@@ -313,6 +316,9 @@
     <Content Include="Scripts\lib\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\lib\knockout-2.1.0.js" />
     <Content Include="Scripts\lib\modernizr-2.6.2.js" />
+    <Content Include="Scripts\lib\moment.js" />
+    <Content Include="Scripts\lib\moment.min.js" />
+    <Content Include="Scripts\lib\require.js" />
     <Content Include="Scripts\lib\toastr.js" />
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\lib\TrafficCop-amd.js" />
@@ -389,7 +395,7 @@
   <ItemGroup>
     <None Include=".htaccess" />
     <None Include="Content\styles.less" />
-    <Content Include="index.cshtml" />
+    <Content Include="home.cshtml" />
     <Content Include="Test\vm.speaker.tests.cshtml" />
     <Content Include="Test\vm.speakers.tests.cshtml" />
     <Content Include="Views\favorites.cshtml" />
