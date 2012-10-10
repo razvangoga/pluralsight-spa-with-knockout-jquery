@@ -71,14 +71,17 @@ namespace CodeCamper.Web
 
             // 3rd Party CSS files
             bundles.Add(new StyleBundle("~/Content/css")
+                .Include("~/Content/boilerplate-style.css")
                 .Include("~/Content/toastr.css")
                 .Include("~/Content/toastr-responsive.css"));
 
             // Custom LESS files
             var lessBundle = new Bundle("~/Content/Less")
                 .Include("~/Content/styles.less");
+
             lessBundle.Transforms.Add(new LessTransform());
             lessBundle.Transforms.Add(new CssMinify());
+            
             bundles.Add(lessBundle);
         }
     }
